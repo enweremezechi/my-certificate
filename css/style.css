@@ -1,0 +1,355 @@
+/* reset */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* body */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    background: linear-gradient(to right, rgb(0, 225, 255), rgb(104, 247, 104));
+}
+
+/* container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* content */
+.content {
+    margin-top: 5%;
+    display: flex; 
+    box-shadow: 1px 1px 10px 10px rgb(82, 78, 78);
+    align-items: center;
+    background: white;
+}
+
+/* left-col */
+
+.left-col {
+    width: 40%;
+}
+
+
+.img-cont {
+    background: rgb(46, 45, 45);
+}
+
+.left-col img {
+    height: 200px;
+    width: 100%;
+    border-radius: 100%;
+}
+
+
+/* eft-contact-info */
+.left-contact-info {
+    background: rgb(49, 49, 49);
+    color: rgb(146, 143, 143);
+    font-size: 12px;
+    text-align:justify;
+    position: relative;
+    padding-top: 25px;
+}
+
+.left-contact-info  a {
+    text-decoration: none;
+    color: rgb(116, 112, 112);
+}
+
+.left-contact-info h2 {
+    font-size: 18px;
+    background: rgb(75, 74, 74);
+    padding: 0px 40px;
+    border-left: 8px solid yellow;
+}
+
+
+.left-contact-info p:nth-child(1){
+    font-size: 16px;
+    padding: 0px 40px;
+}
+
+.left-contact-info p:nth-child(2),
+.left-contact-info p:nth-child(3){
+    padding: 0px 30px;
+}
+
+.left-contact-info div {
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* left-edu-info */
+
+.left-edu-info {
+    background:rgb(30, 34, 43);
+    position: relative;
+    padding: 25px 0;
+    color: rgb(175, 170, 170);
+}
+
+.left-edu-info h2{
+    font-size: 18px;
+    background: rgb(75, 74, 74);
+    padding: 0px 40px;
+    border-left: 8px solid yellow;
+}
+
+.left-edu-info p {
+    padding: 10px 40px;
+    font-size: 12px;
+    line-height: 1.em;
+}
+
+/******************right-col******************************/
+
+.right-col {
+    width: 60%;
+    color: white;
+    color: #333;
+}
+
+/* intro */
+
+.intro  {
+    width: 100%;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    line-height: 1.9em;
+    flex-wrap: wrap;
+}
+
+.intro  p {
+font-size: 20px;
+padding-bottom: 20px;
+}
+
+/* h1 */
+.intro  h1{
+  padding-top: 0px;
+}
+
+.green {
+    color: green;
+}
+.orange {
+    color: orange;
+}
+.purple {
+    color: purple;
+}
+.brown {
+    color: brown;
+}
+
+/* profile */
+.profile {
+    width: 100%;
+}
+
+.profile h2 {
+    padding: 15px;
+    font-size: 18px;
+    background: rgb(163, 160, 160);
+    border-left: 8px solid yellow; 
+}
+
+.profile p {
+   padding: 5px 50px;
+}
+
+/* experiences */
+.experiences {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.experiences h2 {
+    padding: 15px;
+    font-size: 18px;
+    background: rgb(163, 160, 160);
+    border-left: 8px solid rgb(243, 243, 87); 
+}
+
+.experiences a {
+    margin: 10px 50px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    background:rgb(76, 0, 255);
+}
+
+.experiences a:hover {
+    background: green;
+    color: yellow;
+}
+
+.experiences p {
+    padding: 5px 50px; 
+}
+
+/* skills */
+
+.skills h2{
+    padding: 15px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    background: rgb(163, 160, 160);
+    border-left: 8px solid yellow; 
+}
+.skills h4 {
+    color: rgb(255, 71, 194);
+}
+
+.html,
+.css,
+.javascript {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 50px;
+    margin-top: 10px;
+}
+
+/* dots */
+
+.dot{
+    display: flex;
+    margin-top: 5px;
+}
+
+/******for mobile****/
+@media(max-width:414px){
+
+ /***intro***/
+    .intro  {
+        width: 100%;
+        padding-left: 20px;
+        font-size:12px;
+}
+
+/* left-contact-info */
+
+/* left-col */
+.left-col h2 {
+    padding: 0px 20px; 
+}
+
+.left-contact-info p:nth-child(2),
+.left-contact-info p:nth-child(3) {
+    padding: 0px 20px;
+}
+
+
+.profile p {
+    padding: 5px 10px;
+ }
+
+
+.experiences p {
+    padding: 5px 10px; 
+}
+
+
+
+.html,
+.css,
+.javascript{
+    padding: 5px 20px;
+    margin-top: 10px;   
+}
+
+}
+
+@media(max-width:375px) {
+.left-contact-info p:nth-child(2),
+.left-contact-info p:nth-child(3){
+    padding: 0px 6px;
+}
+
+.intro  {
+    width: 100%;
+    padding-left: 10px
+}
+
+.left-edu-info p {
+    padding: 10px 10px;
+    font-size: 12px;
+    line-height: 1.em;
+}
+
+}
+
+
+@media(max-width:320px) {
+
+
+/* left-col */
+.left-col h2 {
+    padding: 0px 10px; 
+}
+
+/***intro***/
+     .intro  {
+        width: 100%;
+        padding-left: 10px
+}
+
+
+.experiences a {
+    margin: 10px 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    background:rgb(76, 0, 255);
+}
+
+
+
+.html,
+.css,
+.javascript{
+    padding: 5px 15px;
+    margin-top: 5px;   
+}
+
+
+
+.left-col {
+    width: 50%;
+}
+
+}
+
+@media(max-width:280px) {
+
+.left-col {
+    width: 50%;
+}
+
+.right-col {
+    width: 50%;
+}
+
+.left-col h2 {
+    padding: 0px 5px; 
+}
+
+
+.intro  {
+    width: 100%;
+    padding-left: 10px;
+    line-height: 1.5em;
+}
+}
